@@ -1,0 +1,88 @@
+/* Mobile-first responsive design */
+@media (max-width: 480px) {
+    /* Hero section mobile optimization */
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        gap: var(--spacing-xs);
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    /* Navigation mobile */
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    /* Skills mobile */
+    .skill-category li {
+        font-size: 0.85rem;
+    }
+    
+    /* Projects mobile */
+    .projects-grid {
+        gap: var(--spacing-md);
+    }
+    
+    .project-card {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    /* Contact mobile */
+    .contact-info {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .contact-item {
+        padding: var(--spacing-sm);
+    }
+}
+
+/* Tablet optimization */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 6rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
